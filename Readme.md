@@ -3,7 +3,6 @@
 Addressbook Application written in F# using the Giraffe Framework
 
 ## Build Instructions
---------------------
 ### Pre-Requisites
 - .Net Core
 - Bower 
