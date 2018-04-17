@@ -1,13 +1,25 @@
-# Restore Bower Components
-Push-Location .\AddressBook.Web
-    "Restore Bower Packages"
-    bower install
-Pop-Location
+param(
+    [string] $action = "build"
+)
 
-"Restore Nuget Packages"
-# Restore Packages
-dotnet restore
+switch($action){
+    "Run" {
+        SET-LOCATION .\AddressBook.Web
+        dotnet run
+    }
+    "Build"{
+        # Restore Bower Components
+        Push-Location .\AddressBook.Web
+            "Restore Bower Packages"
+            bower install
+        Pop-Location
 
-"Building Applications"
-# Build Existing Projects
-dotnet build
+        "Restore Nuget Packages"
+        # Restore Packages
+        dotnet restore
+
+        "Building Applications"
+        # Build Existing Projects
+        dotnet build
+    }
+}

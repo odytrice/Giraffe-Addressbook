@@ -1,5 +1,5 @@
 {
-  "name": "Addressbook",
+  "name": "addressbook",
   "dependencies": {
     "jquery": "^3.3.1",
     "flat-ui": "^2.3.0",
