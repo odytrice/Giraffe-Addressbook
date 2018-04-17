@@ -1,0 +1,9 @@
+{
+  "name": "Addressbook",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "flat-ui": "^2.3.0",
+    "font-awesome": "^5.0.10",
+    "bootstrap": "^4.1.0"
+  }
+}
